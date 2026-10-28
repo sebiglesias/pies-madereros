@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Pies Madereros (Pies Tablares) | Cómputo de Madera y Aserradero</title>
+  <meta name="description" content="Calcula online los pies madereros (p² / board feet), metros cúbicos (m³) y peso de tirantes, tablas, vigas y machimbre para aserraderos y carpintería. Incluye desperdicio y costo.">
+  <meta name="keywords" content="calculadora pies madereros, pies tablares formula, calcular pies cuadrados madera, computo madera techo, board feet calculator español, metros cubicos a pies madereros">
+  <link rel="canonical" href="https://sebiglesias.com.ar/pies-madereros/">
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Pies Madereros (Pies Tablares) | Aserradero y Carpintería">
+  <meta property="og:description" content="Calcula al instante los pies madereros, volumen m³ y peso de flete de tirantes, tablas y vigas para comprar madera sin errores.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/pies-madereros/">
+  <meta property="og:image" content="https://sebiglesias.com.ar/pies-madereros/icon.svg">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#12100d">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://sebiglesias.com.ar/pies-madereros/#webapp",
+        "name": "Calculadora de Pies Madereros y Cómputo de Aserradero",
+        "url": "https://sebiglesias.com.ar/pies-madereros/",
+        "description": "Calculadora técnica para computar pies tablares (p²), volumen m³ y peso para techos, pérgolas y carpintería.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sebiglesias.com.ar/pies-madereros/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es un pie maderero o pie tablar (Board Foot)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un pie maderero (pie tablar o board foot en inglés, abreviado p² o FBM) es la unidad comercial estándar empleada en aserraderos para medir el volumen de la madera aserrada. Equivale al volumen de una tabla de 1 pulgada de espesor por 12 pulgadas (1 pie) de ancho por 12 pulgadas (1 pie) de largo, lo que representa 144 pulgadas cúbicas o aproximadamente 0.00236 metros cúbicos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la fórmula para calcular pies madereros con largo en metros?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La fórmula comúnmente utilizada en aserraderos de Argentina, Chile, Uruguay y gran parte de Latinoamérica es: Pies Tablares (p²) = (Espesor en pulgadas × Ancho en pulgadas × Largo en metros × 3.28084) / 12, lo que equivale simplificado a: Espesor (pulg) × Ancho (pulg) × Largo (m) × 0.2734. Por ejemplo, un tirante de 2\" × 6\" de 4.5 metros contiene: 2 × 6 × 4.5 × 0.2734 = 14.76 pies madereros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántos pies madereros hay en un metro cúbico (m³)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un metro cúbico (1 m³) de madera aserrada equivale exactamente a 423.776 pies madereros (p²). Para convertir pies madereros a metros cúbicos, se divide la cantidad de pies por 423.776 o se multiplica por 0.0023597."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto desperdicio de madera debo calcular para un proyecto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se recomienda calcular entre un 10% y un 15% de desperdicio adicional. En tirantes rectos para techos y pérgolas un 10% es suficiente para compensar cortes en inglete y descartes con rajaduras en los extremos. Para pisos, decks o machimbre donde hay machihembrado y solapes, se sugiere un 15% a 20%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo influye la especie de madera en el peso del flete?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El peso por metro cúbico varía enormemente según la densidad de la madera: el pino estacionado pesa alrededor de 500 kg/m³, el eucalipto grandis unos 650 kg/m³, el eucalipto saligna unos 750 kg/m³, y maderas duras como el quebracho o lapacho superan los 1.100 a 1.200 kg/m³. Esta calculadora estima automáticamente los kilos totales para planificar la capacidad del transporte o flete."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="icon.svg" alt="Pies Madereros Icon" class="brand-icon">
+        <div>
+          <h1 class="brand-title">Pies Madereros <span class="brand-badge">PRO</span></h1>
+          <a href="https://sebiglesias.com.ar" class="back-link">← Volver a sebiglesias.com.ar</a>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Presets bar -->
+    <div class="presets-bar">
+      <span class="presets-label">Plantillas rápidas:</span>
+      <button class="preset-chip" data-preset="techo">🏠 Techo Estándar (Tirantes + Machimbre)</button>
+      <button class="preset-chip" data-preset="pergola">🌿 Pérgola Exterior (Vigas + Columnas)</button>
+      <button class="preset-chip" data-preset="mesa">🪑 Mesa de Madera Maciza</button>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="calc-grid">
+      <!-- Left Column: Timber Pieces Input -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>🪵 Listado de Piezas de Madera</span>
+        </h2>
+
+        <div id="timber-list" class="timber-items-list">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <button id="btn-add-timber" class="btn-add-timber">
+          <span>+ Agregar otra pieza de madera</span>
+        </button>
+
+        <!-- Pricing & Waste settings -->
+        <div class="pricing-config-box">
+          <div class="mini-field-group">
+            <label for="price-per-pie">Precio por Pie Maderero ($ / p²)</label>
+            <input type="number" id="price-per-pie" class="mini-input" placeholder="Ej: 3200 (opcional)" min="0" step="10">
+          </div>
+          <div class="mini-field-group">
+            <label for="waste-pct">Margen de Desperdicio / Cortes</label>
+            <select id="waste-pct" class="mini-select">
+              <option value="0">0% (Exacto)</option>
+              <option value="5">5% (Cortes limpios)</option>
+              <option value="10" selected>10% (Estándar techos y vigas)</option>
+              <option value="15">15% (Machimbre / Obra compleja)</option>
+              <option value="20">20% (Decks / Tablones con nudos)</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Results & Summary -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>📊 Cómputo Total y Cotización</span>
+        </h2>
+
+        <div class="results-hero">
+          <div class="hero-box">
+            <div id="hero-board-feet" class="hero-num">0 p²</div>
+            <div class="hero-desc">Total Pies Tablares (p²)</div>
+          </div>
+          <div class="hero-box">
+            <div id="hero-cost" class="hero-num">---</div>
+            <div class="hero-desc">Presupuesto Estimado</div>
+          </div>
+        </div>
+
+        <div class="summary-specs-list">
+          <div class="spec-item">
+            <div class="spec-left">
+              <span class="spec-icon">📏</span>
+              <div>
+                <div class="spec-title">Pies Madereros Netos</div>
+                <div class="spec-sub">Sin desperdicio aplicado</div>
+              </div>
+            </div>
+            <div class="spec-right">
+              <div id="spec-base-p2" class="spec-val">0.0 p²</div>
+            </div>
+          </div>
+
+          <div class="spec-item">
+            <div class="spec-left">
+              <span class="spec-icon">✂️</span>
+              <div>
+                <div class="spec-title">Margen de Desperdicio</div>
+                <div class="spec-sub">Cortes, empalmes e ingletes</div>
+              </div>
+            </div>
+            <div class="spec-right">
+              <div id="spec-waste" class="spec-val">+10% (0 p²)</div>
+            </div>
+          </div>
+
+          <div class="spec-item">
+            <div class="spec-left">
+              <span class="spec-icon">📦</span>
+              <div>
+                <div class="spec-title">Volumen Total</div>
+                <div class="spec-sub">En metros cúbicos (1 m³ = 423.8 p²)</div>
+              </div>
+            </div>
+            <div class="spec-right">
+              <div id="spec-volume" class="spec-val">0.000 m³</div>
+            </div>
+          </div>
+
+          <div class="spec-item">
+            <div class="spec-left">
+              <span class="spec-icon">⚖️</span>
+              <div>
+                <div class="spec-title">Peso Estimado de Carga</div>
+                <div class="spec-sub">Para calcular flete según especie</div>
+              </div>
+            </div>
+            <div class="spec-right">
+              <div id="spec-weight" class="spec-val">0 kg</div>
+            </div>
+          </div>
+
+          <div class="spec-item">
+            <div class="spec-left">
+              <span class="spec-icon">📐</span>
+              <div>
+                <div class="spec-title">Metros Lineales y Piezas</div>
+                <div class="spec-sub">Longitud total sumada</div>
+              </div>
+            </div>
+            <div class="spec-right">
+              <div id="spec-linear" class="spec-val">0.0 m</div>
+              <div id="spec-pieces" class="spec-unit">0 piezas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-toolbar">
+          <button id="btn-share" class="btn-primary">
+            <span>📲 Compartir / Copiar Pedido</span>
+          </button>
+          <button id="btn-print" class="btn-secondary">
+            <span>🖨️ Imprimir</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- AdSense Banner Unit Container -->
+    <div class="ad-slot-container">
+      <div class="ad-disclaimer">Publicidad</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- SEO Educational Guide Section -->
+    <article class="seo-section">
+      <h2>Guía Completa para Calcular Pies Madereros y Comprar Madera en Aserraderos</h2>
+      <p>
+        En el sector de la carpintería, la construcción y los aserraderos de América Latina y Estados Unidos, la madera aserrada no suele comercializarse por metro cuadrado ni por peso, sino por <strong>pies madereros</strong> (conocidos también como <strong>pies tablares</strong> o <em>board feet</em> en los países anglosajones). Entender cómo se mide y calcula este volumen es indispensable para cotizar techos, pérgolas, entrepisos y muebles sin pagar de más ni quedarse corto de material.
+      </p>
+
+      <h3>¿Qué es exactamente un pie maderero o pie tablar?</h3>
+      <p>
+        Un pie tablar (representado comúnmente como <strong>p²</strong>, <strong>PT</strong> o <strong>FBM</strong> - <em>Foot Board Measure</em>) es una unidad de <strong>volumen</strong>, no de superficie. Corresponde al volumen que ocupa una pieza de madera de <strong>1 pulgada de espesor</strong>, <strong>12 pulgadas (1 pie) de ancho</strong> y <strong>12 pulgadas (1 pie) de largo</strong>.
+      </p>
+      <p>
+        Dado que 1 pie = 12 pulgadas, el volumen de 1 pie maderero equivale a <code>1" × 12" × 12" = 144 pulgadas cúbicas</code> (aproximadamente <strong>0,0023597 metros cúbicos</strong>).
+      </p>
+
+      <h3>Fórmulas de Cálculo Habituales</h3>
+      <p>
+        En los aserraderos de Argentina, Uruguay y gran parte del Cono Sur, las escuadrías (espesor y ancho) se expresan históricamente en <strong>pulgadas</strong>, mientras que el largo de los tirantes y tablas se comercializa en <strong>metros</strong>. La fórmula oficial aplicada es:
+      </p>
+      <div style="background: var(--bg-card); padding: 16px; border-radius: var(--radius-sm); border-left: 4px solid var(--accent); margin: 16px 0; font-family: monospace;">
+        <strong>Pies Madereros (p²) = ( Espesor [pulg] × Ancho [pulg] × Largo [metros] × 3,28084 ) / 12</strong><br>
+        <em>O simplificado:</em><br>
+        <strong>Pies Madereros (p²) = Espesor [pulg] × Ancho [pulg] × Largo [metros] × 0,2734</strong>
+      </div>
+      <p>
+        Por ejemplo, si necesitas 10 tirantes de <strong>2" × 6"</strong> con un largo de <strong>4,20 metros</strong>:
+      </p>
+      <ul>
+        <li>Por pieza: <code>2 × 6 × 4,20 × 0,2734 = 13,78 p²</code></li>
+        <li>10 piezas: <code>13,78 × 10 = 137,8 p²</code></li>
+      </ul>
+
+      <h3>Tabla de Equivalencias de Secciones Comerciales</h3>
+      <p>
+        A continuación se detalla cuántos pies madereros rinde cada metro lineal según la sección comercial más demandada:
+      </p>
+      <div class="seo-table-wrapper">
+        <table class="seo-table">
+          <thead>
+            <tr>
+              <th>Escuadría (Pulgadas)</th>
+              <th>Denominación Típica</th>
+              <th>Pies Madereros por Metro Lineal</th>
+              <th>Metros por cada 100 p²</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1" × 2"</td>
+              <td>Listón / Clavadera fina</td>
+              <td>0,55 p² / m</td>
+              <td>182 m</td>
+            </tr>
+            <tr>
+              <td>2" × 2"</td>
+              <td>Clavadera / Listón grueso</td>
+              <td>1,09 p² / m</td>
+              <td>91,4 m</td>
+            </tr>
+            <tr>
+              <td>1" × 4"</td>
+              <td>Tabla / Entablonado</td>
+              <td>1,09 p² / m</td>
+              <td>91,4 m</td>
+            </tr>
+            <tr>
+              <td>1" × 6"</td>
+              <td>Tabla ancha</td>
+              <td>1,64 p² / m</td>
+              <td>61,0 m</td>
+            </tr>
+            <tr>
+              <td>2" × 4"</td>
+              <td>Tirante estándar / Bastidor</td>
+              <td>2,19 p² / m</td>
+              <td>45,7 m</td>
+            </tr>
+            <tr>
+              <td>2" × 5"</td>
+              <td>Tirante de techo mediano</td>
+              <td>2,73 p² / m</td>
+              <td>36,6 m</td>
+            </tr>
+            <tr>
+              <td>2" × 6"</td>
+              <td>Tirante de techo clásico</td>
+              <td>3,28 p² / m</td>
+              <td>30,5 m</td>
+            </tr>
+            <tr>
+              <td>3" × 6"</td>
+              <td>Viga intermedia</td>
+              <td>4,92 p² / m</td>
+              <td>20,3 m</td>
+            </tr>
+            <tr>
+              <td>3" × 8"</td>
+              <td>Viga pesada / Dintel</td>
+              <td>6,56 p² / m</td>
+              <td>15,2 m</td>
+            </tr>
+            <tr>
+              <td>4" × 4"</td>
+              <td>Columna para pérgola / Poste</td>
+              <td>4,37 p² / m</td>
+              <td>22,9 m</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Densidades de Madera y Cálculo de Peso para Transporte</h3>
+      <p>
+        Al comprar grandes volúmenes para una obra, el peso total de la carga es el factor limitante para camiones y camionetas de flete. Las maderas varían drásticamente de peso según su densidad seca o semi-verde:
+      </p>
+      <ul>
+        <li><strong>Pino Elliotis / Paraná:</strong> ~500 kg por m³ (~1,18 kg por pie maderero). Madera blanda y liviana ideal para machimbre y encofrados.</li>
+        <li><strong>Eucalipto Grandis:</strong> ~650 kg por m³ (~1,53 kg por pie maderero). La madera estructural por excelencia para techos livianos y tinglados en el Cono Sur.</li>
+        <li><strong>Eucalipto Saligna:</strong> ~750 kg por m³ (~1,77 kg por pie maderero). Más pesada y resistente a flexión para vigas a la intemperie.</li>
+        <li><strong>Madera Semidura (Cedro, Guatambú, Peteribí):</strong> ~700 a 750 kg por m³. Para carpintería fina, aberturas y mobiliario.</li>
+        <li><strong>Madera Dura (Lapacho, Quebracho Colorado, Cumarú):</strong> ~1.100 a 1.250 kg por m³ (~2,6 a 2,9 kg por pie maderero). Maderas imputrescibles para decks, pérgolas de exterior y pilotes.</li>
+      </ul>
+
+      <h3>Consejos Clave al Encargar Madera en el Aserradero</h3>
+      <ol style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Especificar si es Cepillada o en Bruto:</strong> La madera cepillada pierde habitualmente entre 1/8" y 1/4" (3 a 6 mm) por cara respecto a la escuadría nominal en bruto, pero en la mayoría de los aserraderos se cobra según el pie en bruto inicial.</li>
+        <li><strong>Calcular los largos comerciales:</strong> Los aserraderos cortan tirantes en múltiplos de medio metro o pies (3,00m, 3,50m, 4,00m, 4,50m, 5,00m). Si tu luz entre apoyos es de 3,70m, deberás pedir piezas de 4,00m y cortar el remanente en obra.</li>
+        <li><strong>Agregar un 10% a 15% de desperdicio:</strong> Los extremos pueden traer grietas por secado rápido al sol, y los cortes en ángulo en cumbreras y faldones generan sobrantes inevitables.</li>
+      </ol>
+    </article>
+
+    <!-- Related Apps Cluster -->
+    <div class="related-cluster">
+      <div class="related-title">
+        <span>🔗 Otras herramientas útiles para construcción y proyectos:</span>
+      </div>
+      <div class="related-links-grid">
+        <a href="https://sebiglesias.com.ar/durlock/" class="related-app-card">
+          <span>🧱 Calculadora Durlock / Drywall</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/materiales/" class="related-app-card">
+          <span>🏗️ Calculadora de Materiales</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/ceramicos/" class="related-app-card">
+          <span>📐 Calculadora de Cerámicos</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/camper-solar/" class="related-app-card">
+          <span>☀️ Calculadora Solar 12V</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bar -->
+  <aside class="sticky-mobile-bar">
+    <div class="sticky-metric">
+      <span class="sticky-label">Total a comprar</span>
+      <span id="sticky-board-feet" class="sticky-val">0 p²</span>
+    </div>
+    <div class="sticky-metric">
+      <span class="sticky-label">Presupuesto</span>
+      <span id="sticky-cost" class="sticky-val">---</span>
+    </div>
+    <button id="sticky-share-btn" class="sticky-btn">Compartir</button>
+  </aside>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
